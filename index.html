@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #webcam {
+            height: 160px;
+            transform: scaleX(-1);
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div class="row text-center">
+        <div class="col-md-12 text-center">
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
+    </div><br><br>
+    <div class="row text-center">
+        <div class="col-md-12 text-center">
+        <button id="train" class="btn btn-primary">Train</button>
+        <button id="predict" class="btn btn-warning">Predict</button>
+        </div>
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button class="btn btn-default" id="one">One</button><span id="one-total">0</span>
+            <button class="btn btn-default" id="two">Two</button><span id="two-total">0</span>
+            <button class="btn btn-default" id="three">Three</button><span id="three-total">0</span>
+            <button class="btn btn-default" id="four">Four</button><span id="four-total">0</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
